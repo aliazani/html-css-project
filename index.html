@@ -11,10 +11,7 @@
     <meta content="website" name="og:type" />
     <meta content="" name="og:image" />
     <meta content="https://moshified.com" name="og:url" />
-    <meta
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      name="viewport"
-    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <!-- Fonts   -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -61,11 +58,11 @@
         </header>
         <picture data-aos="zoom-in">
           <source
-            srcset="images/banner.webp 1x, images/banner@2x.webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
             type="image/webp"
           />
           <source
-            srcset="images/banner.png 1x, images/banner@2x.png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
             type="image/png"
           />
           <img alt="" class="hero__image" src="images/banner.png" />
@@ -430,12 +427,12 @@
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Item 1</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Website Hosting</a></li>
@@ -446,12 +443,12 @@
         </section>
 
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Item 2</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Architecto, iusto!
@@ -459,21 +456,21 @@
         </section>
 
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Item 3</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Architecto, iusto!
           </div>
         </section>
-        <section class="footer__brand">
+        <div class="footer__brand">
           <img alt="" src="images/logo.svg" />
           <p class="footer__copyright">Copyright 2021 codewithmosh</p>
-        </section>
+        </div>
       </div>
     </footer>
     <script src="js/main.js"></script>
