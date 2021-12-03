@@ -24,7 +24,7 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 
     <!-- Styles   -->
-    <link href="css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link href="css/styles.css" rel="stylesheet" />
     <title>Moshify - Go Online for just $9</title>
   </head>
@@ -32,7 +32,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img alt="" src="images/logo.svg" /></a>
+        <a aria-label="Moshify" class="nav__brand" href="/"
+          ><img alt="" src="images/logo.svg"
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
@@ -79,6 +81,7 @@
       </header>
       <div class="input-group">
         <input
+          aria-label="Domain"
           class="input"
           placeholder="Enter domain name here ..."
           type="text"
@@ -372,11 +375,15 @@
         <div class="card testimonial">
           <div class="grid grid--cols-2">
             <div class="testimonial__image">
-              <img
-                alt="A happy, smiling customer."
-                class="testimonial__image"
-                src="images/testimonial.jpg"
-              />
+              <picture>
+                <source srcset="images/testimonial.webp" type="image/webp" />
+                <source srcset="images/testimonial.jpg" type="image/jpg" />
+                <img
+                  alt="A happy, smiling customer."
+                  class="testimonial__image"
+                  src="images/testimonial.jpg"
+                />
+              </picture>
               <span class="icon-container icon-container--accent">
                 <svg class="icon--small icon--white">
                   <use href="images/sprite.svg#quotes"></use>
